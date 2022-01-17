@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans';
+  background-color: #A585EA;
+}
+
+#title {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+input {
+  border-radius: 4px;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid #A8A8A8;
+  padding: 5px 0px;
+  padding-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.specials-button {
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px 0px;
+  background: linear-gradient(to right, #64D1DE, #E33BF6);
+  border: 0px;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  padding: 0px 15%;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+}
+
+.main-painel {
+  width: 25%;
+  border-radius: 10px;
+  display: block;
+  height: max-content;
+  background-color: #FFF;
+}
+
+.painel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.forgot {
+  margin-top: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #A8A8A8;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+#username {
+  background: url("/static/images/person-outline.svg") no-repeat left;
+  background-position: 5px;
+  background-size: 20px;
+}
+
+#password, #npassword {
+  background: url("/static/images/bag-outline.svg") no-repeat left;
+  background-position: 5px;
+  background-size: 20px;
+}
+
+#code {
+  background: url("/static/images/settings-outline.svg") no-repeat left;
+  background-position: 5px;
+  background-size: 20px;
+}
+
+.title-n {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  color: #3f3f3f;
+}
+
+.create-accont {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #7355fa;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.not-registry {
+  margin-top: 10vh;
+  margin-bottom: 15px;
+}
+
+.error {
+  border-color: #ff2222;
+}
+
+.modal {
+  z-index: 99999;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: fit-content;
+  background-color: #47B356;
+  font-weight: bold;
+  border-radius: 5px;
+  user-select: none;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal h2 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px 5px;
+}
+
+.modal p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1308px) {
+  .main-painel {
+    width: 35%;
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .main-painel {
+    width: 43%;
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .main-painel {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .modal {
+    width: fit-content;
+    height: fit-content;
+    bottom: auto;
+    right: auto;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 10px;
+  }
+}

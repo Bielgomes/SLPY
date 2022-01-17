@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <script type="text/javascript" src="/static/scripts/modal.js"></script>
+  <script type="text/javascript" src="/static/scripts/login.js"></script>
+  <link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon">
+  <title>SLPY</title>
+</head>
+<body>
+  <section>
+    <div class="modal" id="modal">
+      <h2 id="modal-title">Erro:</h2>
+      <p id="modal-content">Texto texto texto</p>
+    </div>
+    <div class="main-painel">
+      <h1 id="title">Login</h1>
+      <div class="painel">
+        <form method="POST" id="loginForm">
+          <label for="username">Email</label><br>
+          <input id="username" name="username" placeholder="Seu Email" type="email"><br>
+          <label for="password">Senha</label><br>
+          <input id="password" name="password" placeholder="Sua senha" type="password"><br>
+          <button class="specials-button">LOGIN</button>
+          <a href="/forgot"><p class="forgot">Esqueceu sua senha?</p></a>
+          <div class="not-registry">
+            <p class="title-n">Não tem uma Conta?</p>
+            <a href="/registrar"><p class="create-accont">Criar Conta</p></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
